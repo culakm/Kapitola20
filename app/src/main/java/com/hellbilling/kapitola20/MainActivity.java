@@ -2,10 +2,7 @@ package com.hellbilling.kapitola20;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -30,7 +27,7 @@ public class MainActivity extends ListActivity {
         fields = R.string.class.getFields();
 
         //for (int  i =0; i < fields.length; i++) {
-        for(Field field : fields)  {
+        for (Field field : fields) {
             int resId = getResources().getIdentifier(field.getName(), "string", getPackageName());
             String fieldName = field.getName();
             String fieldValue = "";
@@ -53,20 +50,25 @@ public class MainActivity extends ListActivity {
                 android.R.layout.simple_list_item_1,
                 activitiesList));
 
-        selection=(TextView)findViewById(R.id.selection);
+        selection = (TextView) findViewById(R.id.selection);
     }
 
     public void onListItemClick(ListView parent, View v, int position, long id) {
         selection.setText(activitiesList.get(position));
         Intent intent;
-        switch(position) {
+        switch (position) {
             case 0:
                 intent = new Intent(this, Activity1.class);
                 startActivity(intent);
                 break;
-//            case 1:
-//                intent = new Intent(this, Activity2.class);
-//                startActivity(intent);
-//                break;
+            case 1:
+                intent = new Intent(this, Activity2.class);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(this, Activity3.class);
+                startActivity(intent);
+                break;
         }
     }
+}
