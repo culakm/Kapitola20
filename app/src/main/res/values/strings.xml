@@ -3,8 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_activity1">01Progress bar</string>
-    <string name="title_activity_activity2">02Asynchronny list</string>
-    <string name="title_activity_activity3">03Asynchronny progress bar a zmena orientacie</string>
-    <string name="title_activity_activity4">04Activity4</string>
+    <string name="title_activity_activity1">01 kap20 Progress bar</string>
+    <string name="title_activity_activity2">02 kap20 Asynchronny list</string>
+    <string name="title_activity_activity3">03 kap20 Asynchronny progress bar a zmena orientacie</string>
+    <string name="title_activity_activity4">04 kap22 volanie intentu s uri geo: funguje len ked mas nejake mapy v mobile</string>
+    <string name="title_activity_activity5">05 kap22 browser s dvomi vlastnymi tabmi</string>
 </resources>

@@ -73,6 +73,10 @@ public class MainActivity extends ListActivity {
                 intent = new Intent(this, Activity4.class);
                 startActivity(intent);
                 break;
+            case 4:
+                intent = new Intent(this, Activity5.class);
+                startActivity(intent);
+                break;
         }
     }
 }

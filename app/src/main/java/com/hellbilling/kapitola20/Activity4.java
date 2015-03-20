@@ -1,39 +1,30 @@
 package com.hellbilling.kapitola20;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
-
-public class Activity4 extends ActionBarActivity {
+public class Activity4 extends Activity {
+    private EditText lat;
+    private EditText lon;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
         setContentView(R.layout.activity_activity4);
+
+        lat=(EditText)findViewById(R.id.lat);
+        lon=(EditText)findViewById(R.id.lon);
     }
 
+    public void showMe(View v) {
+        String _lat=lat.getText().toString();
+        String _lon=lon.getText().toString();
+        Uri uri=Uri.parse("geo:"+_lat+","+_lon);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_activity4, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
 }
