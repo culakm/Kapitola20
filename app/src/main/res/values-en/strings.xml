@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kapitola20</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity1">EN 01 kap20 Progress bar</string>
+    <string name="title_activity_activity2">EN 02 kap20 Asynchronny list</string>
+    <string name="title_activity_activity3">EN 03 kap20 Asynchronny progress bar a zmena orientacie</string>
+    <string name="title_activity_activity4">EN 04 kap22 volanie intentu s uri geo: funguje len ked mas nejake mapy v mobile</string>
+    <string name="title_activity_activity5">EN 05 kap22 browser s dvomi vlastnymi tabmi</string>
+    <string name="title_activity_activity6">EN 06 kap23 formatovanie a stylovanie retazca</string>
+    <string name="btn_name">Name:</string>
+    <string name="funky_format">My name is: &lt;b&gt;%1$s&lt;/b&gt;</string>
+    <string name="title_activity_activity7">EN 07 kap23 loadovanie zoznamu z xml</string>
+    <string name="title_activity_activity8">EN 08 kap 23 loadovanie zoznamu z file</string>
+</resources>

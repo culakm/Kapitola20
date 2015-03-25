@@ -18,6 +18,7 @@
                 android:text="Location:"
                 />
             <EditText android:id="@+id/lat"
+                android:text="48.878934"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:cursorVisible="true"
@@ -26,6 +27,7 @@
                 android:layout_weight="1"
                 />
             <EditText android:id="@+id/lon"
+                android:text="18.034340"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:cursorVisible="true"
